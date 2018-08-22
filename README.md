@@ -1,19 +1,40 @@
 # MoJoin Core
 
+## Quick Start
+
 ```Javascript
-  import { Cache, Report, REST, MongoDb, SQL, JSON } from 'mojoin'
+const Mojoin = require('mojoin-core')
+const mojoin = new Mojoin([
+  {
+    name: 'todos',
+    type: 'json',
+    location: './node_modules/mojoin-core/examples/datasource/todos.json'
+  },
+  {
+    name: 'users',
+    type: 'rest',
+    location: 'https://jsonplaceholder.typicode.com/users'
+  }
+])
 
-  const cache = new Cache({
-    type: 'SQLite'
-    location: './db'
-  })
+const query = {
+  table: 'todos',
+  query: {
+    where: {
+      userId: 2,
+      completed: 0
+    },
+    include: [{
+      model: 'users',
+      foreignKey: 'userId'
+    }]
+  }
+}
 
-  const query // sequelize query
-  const report = new Report(cache, query)
-  await report.export({
-    type: 'xls'
-  })
-
+mojoin.syncAll()
+  .then(() => mojoin.generateReport(query))
+  .then(r => console.log(r))
+  .catch(e => console.error(e))
 ```
 
 ## Cache
@@ -22,4 +43,4 @@
 
 ### Specified
 
-  type: 'postgres' // 'mysql'|'sqlite'|'postgres'|'mssql'
+  type: 'postgres' // 'mysql'|'sqlite'|'postgres'|'mssql',
