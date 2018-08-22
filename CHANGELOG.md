@@ -23,8 +23,13 @@
 - [ ] Disable verbose logging
 - [ ] JSDocs
 - [ ] Improve error handling
+- [ ] Initializing the cache includes synchronous creation of folder if not exists --> this should be asynchronous
 
-## Version 0.0.1
+## Version 0.0.2 - 2018-08-22
+
+- [x] automatically create cache db and folder if not exists
+
+## Version 0.0.1 - 2018-08-22
 
 - [x] Caching of datasources
 - [x] query and perform joins on cached data
@@ -34,10 +39,8 @@
   - [x] REST API
   - [x] Json File
 - [x] automatically generate schema based on a dataset
-- [ ] Example
-- [ ] Readme
-
-Mojoin-CLI
+- [x] Example
+- [x] Readme
 
 Mojoin-Server
 
