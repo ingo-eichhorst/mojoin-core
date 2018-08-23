@@ -7,7 +7,7 @@
     "start": "node lib/index.js",
     "test": "jest . --config jest.config.json",
     "lint": "eslint .",
-    "test-ci": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "test-ci": "jest . --config jest.config.json && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "author": "Ingo Eichhorst",
   "license": "ISC",
