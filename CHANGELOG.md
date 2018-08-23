@@ -19,12 +19,16 @@
 - [ ] Export Reports an CSV, JSON or XLS
 - [ ] CodeImprovement: functions take only a object as input
 - [ ] Cache database to cache the last result in SQL database
-- [ ] Unit/ integration tests
 - [ ] Disable verbose logging
 - [ ] JSDocs
 - [ ] Improve error handling
 - [ ] Initializing the cache includes synchronous creation of folder if not exists --> this should be asynchronous
 - [ ] Treat syncing processes as task with a certain progress
+
+## Version 0.0.3 - 2018-08-xx
+
+- [x] added unit tests
+- [ ] simplified query structure
 
 ## Version 0.0.2 - 2018-08-22
 

@@ -3,3 +3,4 @@ datasources.yml
 node_modules
 db
 .vscode
+coverage
