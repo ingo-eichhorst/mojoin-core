@@ -24,6 +24,7 @@
 - [ ] JSDocs
 - [ ] Improve error handling
 - [ ] Initializing the cache includes synchronous creation of folder if not exists --> this should be asynchronous
+- [ ] Treat syncing processes as task with a certain progress
 
 ## Version 0.0.2 - 2018-08-22
 
