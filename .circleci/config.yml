@@ -23,7 +23,7 @@ jobs:
           name: "JavaScript Test Suite"
           environment:
             JEST_JUNIT_OUTPUT: reports/junit/js-test-results.xml
-          command: yarn test-ci -- --ci --testResultsProcessor="jest-junit"
+          command: npm run test-ci -- --ci --testResultsProcessor="jest-junit"
           post:
             - coveralls
       - store_test_results:
