@@ -19,16 +19,14 @@ const mojoin = new Mojoin([
 
 const query = {
   table: 'todos',
-  query: {
-    where: {
-      userId: 2,
-      completed: 0
-    },
-    include: [{
-      model: 'users',
-      foreignKey: 'userId'
-    }]
-  }
+  where: {
+    userId: 2,
+    completed: 0
+  },
+  include: [{
+    model: 'users',
+    foreignKey: 'userId'
+  }]
 }
 
 mojoin.syncAll()
