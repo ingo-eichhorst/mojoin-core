@@ -1,5 +1,7 @@
 # MoJoin Core
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c46eb5d869004060bd33ccc8e4d137e2)](https://app.codacy.com/app/ingo-eichhorst/mojoin-core?utm_source=github.com&utm_medium=referral&utm_content=ingo-eichhorst/mojoin-core&utm_campaign=badger)
+
 ## Quick Start
 
 ```Javascript
