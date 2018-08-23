@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node lib/index.js",
     "test": "jest . --config jest.config.json",
-    "lint": "node_modules/eslint/bin ."
+    "lint": "eslint ."
   },
   "author": "Ingo Eichhorst",
   "license": "ISC",
