@@ -5,7 +5,9 @@
   "main": "lib/index.js",
   "scripts": {
     "start": "node lib/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest . --config jest.config.json",
+    "lint": "eslint .",
+    "test-ci": "jest . --config jest.config.json && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "author": "Ingo Eichhorst",
   "license": "ISC",
@@ -19,11 +21,15 @@
     "sqlite3": "4.0.2"
   },
   "devDependencies": {
+    "coveralls": "3.0.2",
     "eslint": "4.19.1",
     "eslint-config-standard": "11.0.0",
     "eslint-plugin-import": "2.12.0",
+    "eslint-plugin-jest": "21.21.0",
     "eslint-plugin-node": "6.0.1",
     "eslint-plugin-promise": "3.8.0",
-    "eslint-plugin-standard": "3.1.0"
+    "eslint-plugin-standard": "3.1.0",
+    "jest": "23.5.0",
+    "jest-junit": "5.1.0"
   }
 }
