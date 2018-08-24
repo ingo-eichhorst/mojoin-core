@@ -28,7 +28,7 @@
 
 ## Version 0.0.4 - 2018-08-xx
 
-- [ ] JSDocs
+- [x] JSDocs
 - [x] Builds on PR - CiercleCi
 - [x] Code Quality checks - codacy
 - [x] Vulnarability checks - snyk
