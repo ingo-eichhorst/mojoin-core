@@ -5,29 +5,37 @@
 - [ ] encrypt cache
 - [ ] Multi-Tenancy
 - [ ] Datasource query pagination
-- [ ] MongoDB connection via ssh
 - [ ] rewrite in typescript
 - [ ] Benchmark tests
 - [ ] Time-Series Reports
 - [ ] Security: Detect SQL injection attacts and prevent
-- [ ] Only update changed data in the cache (by modification date)
-- [ ] Code Quality checks
-- [ ] Vulnarability checks - npm audit / snyc
-- [ ] Threading for long running/ blocking worker processes
-- [ ] Use Strict everywhere
 - [ ] datasource Support SQL databases with (sequalize)
-- [ ] Export Reports an CSV, JSON or XLS
 - [ ] CodeImprovement: functions take only a object as input
-- [ ] Cache database to cache the last result in SQL database
-- [ ] Disable verbose logging
-- [ ] JSDocs
-- [ ] Improve error handling
 - [ ] Initializing the cache includes synchronous creation of folder if not exists --> this should be asynchronous
-- [ ] Treat syncing processes as task with a certain progress
+- [ ] Improve error handling
+- [ ] make horizontal scaling possible by external queue
+- [ ] Threading for long running/ blocking worker processes e.g. Treat syncing processes as task with a certain progress
+- [ ] Only update changed data in the cache (by modification date)
+- [ ] logging library --> debug or winston or whatever
+- [ ] implement recurring sync
+
+## Version 0.0.5 - 2018-xx-xx
+
+- [ ] Use Strict everywhere
+- [ ] Export Reports an CSV, JSON or XLS
 - [ ] add unit and integration tests
+- [ ] MongoDB connection via ssh
+
+## Version 0.0.4 - 2018-08-24
+
+- [x] JSDocs
+- [x] Builds on PR - CiercleCi
+- [x] Code Quality checks - codacy
+- [x] Vulnarability checks - snyk
 
 ## Version 0.0.3 - 2018-08-23
 
+- [x] Disable verbose logging
 - [x] added unit test structure
 - [x] simplified query structure
 
