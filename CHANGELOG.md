@@ -17,6 +17,7 @@
 - [ ] Threading for long running/ blocking worker processes e.g. Treat syncing processes as task with a certain progress
 - [ ] Only update changed data in the cache (by modification date)
 - [ ] logging library --> debug or winston or whatever
+- [ ] implement recurring sync
 
 ## Version 0.0.5 - 2018-xx-xx
 
