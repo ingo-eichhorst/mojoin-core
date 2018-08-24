@@ -7,7 +7,8 @@
     "start": "node lib/index.js",
     "test": "jest . --config jest.config.json",
     "lint": "eslint .",
-    "test-ci": "jest . --config jest.config.json && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "test-ci": "jest . --config jest.config.json && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "test-codacy-coverage": "jest . --config jest.config.json && cat ./coverage/lcov.info | codacy-coverage"
   },
   "author": "Ingo Eichhorst",
   "license": "ISC",
@@ -21,6 +22,7 @@
     "sqlite3": "4.0.2"
   },
   "devDependencies": {
+    "codacy-coverage": "3.0.0",
     "coveralls": "3.0.2",
     "eslint": "4.19.1",
     "eslint-config-standard": "11.0.0",
