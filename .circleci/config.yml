@@ -23,12 +23,9 @@ jobs:
           name: "JavaScript Test Suite"
           environment:
             JEST_JUNIT_OUTPUT: reports/junit/js-test-results.xml
-          command: npm run test-ci -- --ci --testResultsProcessor="jest-junit"
+          command: npm run test-ci -- --ci --testResultsProcessor="jest-junit" && cat ./coverage/lcov.info | codacy-coverage
           post:
             - coveralls
-      - run:
-          name: "Send coverage to codacy"
-          command: jest --coverage && cat ./coverage/lcov.info | codacy-coverage
       - store_test_results:
           path: reports/junit
       - store_artifacts:
