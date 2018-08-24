@@ -26,6 +26,7 @@ jobs:
           command: npm run test-ci -- --ci --testResultsProcessor="jest-junit"
           post:
             - coveralls
+            - codacy-coverage
       - store_test_results:
           path: reports/junit
       - store_artifacts:
