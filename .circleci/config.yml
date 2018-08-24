@@ -26,7 +26,9 @@ jobs:
           command: npm run test-ci -- --ci --testResultsProcessor="jest-junit"
           post:
             - coveralls
-            - codacy-coverage
+      - run:
+          name: "Send coverage to codacy"
+          command: jest --coverage && cat ./coverage/lcov.info | codacy-coverage
       - store_test_results:
           path: reports/junit
       - store_artifacts:
