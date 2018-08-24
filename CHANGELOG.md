@@ -12,7 +12,6 @@
 - [ ] datasource Support SQL databases with (sequalize)
 - [ ] CodeImprovement: functions take only a object as input
 - [ ] Initializing the cache includes synchronous creation of folder if not exists --> this should be asynchronous
-- [ ] Improve error handling
 - [ ] make horizontal scaling possible by external queue
 - [ ] Threading for long running/ blocking worker processes e.g. Treat syncing processes as task with a certain progress
 - [ ] Only update changed data in the cache (by modification date)
@@ -22,8 +21,9 @@
 ## Version 0.0.5 - 2018-xx-xx
 
 - [ ] Use Strict everywhere
-- [ ] Export Reports an CSV, JSON or XLS
-- [ ] add unit and integration tests
+- [ ] Export Reports as CSV, JSON or XLS
+- [ ] add 100% unit and integration tests
+- [ ] Improve error handling
 - [ ] MongoDB connection via ssh
 
 ## Version 0.0.4 - 2018-08-24
