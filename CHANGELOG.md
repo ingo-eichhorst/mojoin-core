@@ -26,7 +26,7 @@
 - [ ] add unit and integration tests
 - [ ] MongoDB connection via ssh
 
-## Version 0.0.4 - 2018-08-xx
+## Version 0.0.4 - 2018-08-24
 
 - [x] JSDocs
 - [x] Builds on PR - CiercleCi
