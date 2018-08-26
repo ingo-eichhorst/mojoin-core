@@ -22,14 +22,16 @@
 - [ ] Only update changed data in the cache (by modification date)
 - [ ] Datasource query pagination
 - [ ] sync all included datasources before query by default
+- [ ] input validation for all methods/ functions
+- [ ] improve the jsdoc comments so that a jsdoc wesite report looks good
 
 ## Version 0.0.5 - 2018-xx-xx
 
-- [x] Use Strict everywhere
 - [ ] Export Reports as CSV, JSON or XLS
 - [ ] add 100% unit and integration tests
 - [ ] Improve error handling
 - [ ] MongoDB connection via ssh
+- [x] Use Strict everywhere
 
 ## Version 0.0.4 - 2018-08-24
 
