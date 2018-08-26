@@ -20,13 +20,16 @@ const query = {
     userId: 2,
     completed: 0
   },
-  include: [{
-    model: 'users',
-    foreignKey: 'userId'
-  }]
+  include: [
+    {
+      model: 'users',
+      foreignKey: 'userId'
+    }
+  ]
 }
 
-mojoin.syncAll()
+mojoin
+  .syncAll()
   .then(() => mojoin.generateReport(query))
   .then(r => console.log(r))
   .catch(e => console.error(e))
