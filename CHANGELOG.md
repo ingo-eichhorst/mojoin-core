@@ -28,9 +28,9 @@
 ## Version 0.0.5 - 2018-xx-xx
 
 - [ ] Export Reports as CSV, JSON or XLS
-- [ ] add 100% unit and integration tests
 - [ ] Improve error handling
 - [ ] MongoDB connection via ssh
+- [x] add >90% unit and integration tests
 - [x] Use Strict everywhere
 
 ## Version 0.0.4 - 2018-08-24
