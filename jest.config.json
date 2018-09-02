@@ -1,4 +1,5 @@
 {
-  "collectCoverageFrom" : ["lib/**/*.js"],
-  "collectCoverage": true
+  "collectCoverageFrom": ["lib/**/*.js"],
+  "collectCoverage": true,
+  "testEnvironment": "node"
 }

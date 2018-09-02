@@ -4,27 +4,34 @@
 
 - [ ] encrypt cache
 - [ ] Multi-Tenancy
-- [ ] Datasource query pagination
 - [ ] rewrite in typescript
 - [ ] Benchmark tests
 - [ ] Time-Series Reports
 - [ ] Security: Detect SQL injection attacts and prevent
 - [ ] datasource Support SQL databases with (sequalize)
-- [ ] CodeImprovement: functions take only a object as input
 - [ ] Initializing the cache includes synchronous creation of folder if not exists --> this should be asynchronous
-- [ ] Improve error handling
+
+## Version 0.1.0 - 2018-xx-xx
+
+- [ ] resolve all the TODOs in the code
+- [ ] implement recurring sync
+- [ ] logging library --> debug or winston or whatever
+- [ ] CodeImprovement: functions take only a object as input
 - [ ] make horizontal scaling possible by external queue
 - [ ] Threading for long running/ blocking worker processes e.g. Treat syncing processes as task with a certain progress
 - [ ] Only update changed data in the cache (by modification date)
-- [ ] logging library --> debug or winston or whatever
-- [ ] implement recurring sync
+- [ ] Datasource query pagination
+- [ ] sync all included datasources before query by default
+- [ ] input validation for all methods/ functions
+- [ ] improve the jsdoc comments so that a jsdoc wesite report looks good
 
 ## Version 0.0.5 - 2018-xx-xx
 
-- [ ] Use Strict everywhere
-- [ ] Export Reports an CSV, JSON or XLS
-- [ ] add unit and integration tests
+- [ ] Export Reports as CSV, JSON or XLS
+- [ ] add 100% unit and integration tests
+- [ ] Improve error handling
 - [ ] MongoDB connection via ssh
+- [x] Use Strict everywhere
 
 ## Version 0.0.4 - 2018-08-24
 

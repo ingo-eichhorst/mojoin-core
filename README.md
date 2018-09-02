@@ -43,4 +43,4 @@ mojoin.syncAll()
 
 ### Specified
 
-  type: 'postgres' // 'mysql'|'sqlite'|'postgres'|'mssql',
+type: 'postgres' // 'mysql'|'sqlite'|'postgres'|'mssql',
