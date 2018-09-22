@@ -2,7 +2,6 @@
 
 [![CircleCI](https://circleci.com/gh/ingo-eichhorst/mojoin-core.svg?style=shield)](https://circleci.com/gh/ingo-eichhorst/mojoin-core) [![Coverage Status](https://coveralls.io/repos/github/ingo-eichhorst/mojoin-core/badge.svg?branch=master)](https://coveralls.io/github/ingo-eichhorst/mojoin-core?branch=master) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c46eb5d869004060bd33ccc8e4d137e2)](https://app.codacy.com/app/ingo-eichhorst/mojoin-core?utm_source=github.com&utm_medium=referral&utm_content=ingo-eichhorst/mojoin-core&utm_campaign=badger) [![Maintainability](https://api.codeclimate.com/v1/badges/2873d7c6e04b0f3524c2/maintainability)](https://codeclimate.com/github/ingo-eichhorst/mojoin-core/maintainability) [![Known Vulnerabilities](https://snyk.io/test/github/ingo-eichhorst/mojoin-core/badge.svg)](https://snyk.io/test/github/ingo-eichhorst/mojoin-core) [![JavaScript Style Guide: StandardJS](https://img.shields.io/badge/code%20style-StandardJS-brightgreen.svg?style=flat)](https://github.com/dwyl/goodparts "JavaScript The Good Parts") [![License: MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](https://en.wikipedia.org/wiki/MIT_License) [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fingo-eichhorst%2Fmojoin-core.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fingo-eichhorst%2Fmojoin-core?ref=badge_shield)
 
-
 ## Quick Start
 
 ```Javascript
