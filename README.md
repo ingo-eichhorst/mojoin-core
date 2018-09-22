@@ -44,3 +44,7 @@ mojoin.syncAll()
 ### Specified
 
 type: 'postgres' // 'mysql'|'sqlite'|'postgres'|'mssql',
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fingo-eichhorst%2Fmojoin-core.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fingo-eichhorst%2Fmojoin-core?ref=badge_large)
