@@ -24,6 +24,9 @@
 - [ ] sync all included datasources before query by default
 - [ ] input validation for all methods/ functions
 - [ ] improve the jsdoc comments so that a jsdoc wesite report looks good
+- [ ] resolve all teh CodeClimate issues
+- [ ] improve readme with complete documentation
+- [ ] insert projects logo in the readme
 
 ## Version 0.0.5 - 2018-xx-xx
 
