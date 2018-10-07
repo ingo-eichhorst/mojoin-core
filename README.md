@@ -44,3 +44,13 @@ mojoin.syncAll()
 ### Specified
 
 type: 'postgres' // 'mysql'|'sqlite'|'postgres'|'mssql',
+
+## MongoDB
+
+### Protocol: MongoDB
+
+### Protocol: SSH
+
+- privateKey
+- password
+

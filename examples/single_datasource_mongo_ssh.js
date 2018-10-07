@@ -4,8 +4,9 @@ const mojoin = new Mojoin([
   {
     name: 'medias',
     type: 'mongodb',
-    location: 'ssh://vagrant:vagrant@talktalk-nemo-staging.nowtilus.tv/media-manager/media',
-    idField: 'uuid'
+    location: 'ssh://deploy@talktalk-nemo-staging.nowtilus.tv/media-manager/media',
+    idField: 'uuid',
+    privateSshKey: '/Users/ingo/.ssh/ieichhorst_rsa'
   }
 ])
 
