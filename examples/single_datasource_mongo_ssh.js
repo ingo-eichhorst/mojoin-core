@@ -2,16 +2,17 @@ const Mojoin = require('../lib/index.js')
 
 const mojoin = new Mojoin([
   {
-    name: 'mongodb',
+    name: 'medias',
     type: 'mongodb',
-    location: 'ssh://vagrant:vagrant@talktalk-nemo-staging.nowtilus.tv/db/tasks'
+    location: 'ssh://vagrant:vagrant@talktalk-nemo-staging.nowtilus.tv/media-manager/media',
+    idField: 'uuid'
   }
 ])
 
 const query = {
-  table: 'tasks',
+  table: 'medias',
   where: {
-    userId: 2
+    subType: 'poster'
   }
 }
 
