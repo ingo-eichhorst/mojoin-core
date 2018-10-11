@@ -10,29 +10,35 @@
 - [ ] Security: Detect SQL injection attacts and prevent
 - [ ] datasource Support SQL databases with (sequalize)
 - [ ] Initializing the cache includes synchronous creation of folder if not exists --> this should be asynchronous
+- [ ] Threading for long running/ blocking worker processes e.g. Treat syncing processes as task with a certain progress
+- [ ] make horizontal scaling possible by external queue
 
 ## Version 0.1.0 - 2018-xx-xx
 
+- [ ] resolve all the CodeClimate issues
 - [ ] resolve all the TODOs in the code
-- [ ] implement recurring sync
-- [ ] logging library --> debug or winston or whatever
-- [ ] CodeImprovement: functions take only a object as input
-- [ ] make horizontal scaling possible by external queue
-- [ ] Threading for long running/ blocking worker processes e.g. Treat syncing processes as task with a certain progress
-- [ ] Only update changed data in the cache (by modification date)
-- [ ] Datasource query pagination
-- [ ] sync all included datasources before query by default
-- [ ] input validation for all methods/ functions
 - [ ] improve the jsdoc comments so that a jsdoc wesite report looks good
-- [ ] resolve all teh CodeClimate issues
 - [ ] improve readme with complete documentation
+- [ ] CodeImprovement: all functions take only a object as input
+- [x] ~~implement recurring sync~~ (moved to the mojoin server, since it's only needed there)
+
+## Version 0.0.7 - 2018-xx-xx
+
+- [ ] input validation for all methods/ functions
+- [ ] sync all included datasources before query by default
+- [ ] Only update changed data in the cache (by modification date)
+
+## Version 0.0.6 - 2018-xx-xx
+
+- [ ] Datasource query pagination
+- [ ] logging library --> debug or winston or whatever
 - [ ] insert projects logo in the readme
 
-## Version 0.0.5 - 2018-xx-xx
+## Version 0.0.5 - 2018-10-11
 
-- [ ] Export Reports as CSV, JSON or XLS
-- [ ] Improve error handling
-- [ ] MongoDB connection via ssh
+- [x] ~~Export Reports as CSV, JSON or XLS~~ (this is moved to the desktop and server app)
+- [x] Improve error handling
+- [x] MongoDB connection via ssh
 - [x] add >90% unit and integration tests
 - [x] Use Strict everywhere
 
@@ -69,6 +75,8 @@
 Mojoin-Server
 
 - [ ] e2e Tests
+- [x] implement recurring sync
+- [ ] Export Reports as CSV, JSON or XLS
 - [ ] nest.js framework
 - [ ] bootstrap phase to ramp up all dependencies or throw errors
 - [ ] Save datasources, queries and generated reports in database
@@ -80,4 +88,5 @@ Mojoin-Server
 Mojoin-Desktop
 
 - [ ] e2e Tests
+- [ ] Export Reports as CSV, JSON or XLS
 - [ ] Electron App that implements Mojoin-Core
