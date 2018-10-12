@@ -3,7 +3,13 @@ module.exports = class NodeSsh {
    * connect mock
    */
   connect () {
-    return {}
+    return {
+      connection: {
+        config: {
+          host: 'test'
+        }
+      }
+    }
   }
 
   /**
