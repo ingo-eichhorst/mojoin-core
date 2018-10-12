@@ -32,7 +32,7 @@
 
 - [ ] Datasource query pagination
 - [ ] Logging library --> debug or winston or whatever
-- [ ] Insert projects logo in the readme
+- [x] Insert projects logo in the readme
 
 ## Version 0.0.5 - 2018-10-11
 
