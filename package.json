@@ -14,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "0.18.0",
+    "debug": "4.1.0",
     "ejson": "2.1.2",
     "generate-schema": "2.6.0",
     "jsonschema": "1.2.4",
