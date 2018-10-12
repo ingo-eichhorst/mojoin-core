@@ -31,7 +31,7 @@
 ## Version 0.0.6 - 2018-xx-xx
 
 - [ ] Datasource query pagination
-- [ ] Logging library --> debug or winston or whatever
+- [ ] Logging library debug
 - [x] Insert projects logo in the readme
 
 ## Version 0.0.5 - 2018-10-11
@@ -75,7 +75,7 @@
 Mojoin-Server
 
 - [ ] e2e Tests
-- [x] Implement recurring sync
+- [ ] Implement recurring sync
 - [ ] Export Reports as CSV, JSON or XLS
 - [ ] Nest.js framework
 - [ ] Bootstrap phase to ramp up all dependencies or throw errors
