@@ -31,7 +31,7 @@
 ## Version 0.0.6 - 2018-xx-xx
 
 - [ ] Datasource query pagination
-- [ ] Logging library debug
+- [X] Logging library debug
 - [x] Insert projects logo in the readme
 
 ## Version 0.0.5 - 2018-10-11
