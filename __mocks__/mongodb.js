@@ -26,14 +26,30 @@ const MongoClient = {
            * Mock find
            */
           find () {
-            return {
-              /**
-               * Mock toArray
-               */
-              toArray () {
-                return albums
-              }
-            }
+            return this
+          },
+          /**
+           * Mock toArray
+           */
+          toArray () {
+            return albums
+          },
+
+          /**
+           * Mock limit
+           *
+           * @param {number} limit
+           */
+          limit (limit) {
+            return this
+          },
+
+          /**
+           * Mock offset
+           * @param {number} offset
+           */
+          skip (offset) {
+            return this
           }
         }
       },
