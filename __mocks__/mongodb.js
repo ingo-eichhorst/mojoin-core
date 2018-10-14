@@ -32,7 +32,9 @@ const MongoClient = {
            * Mock toArray
            */
           toArray () {
-            return albums
+            const offset = this.offset ? this.offset : 0
+            const limit = this.limit ? this.offset : albums.length
+            return albums.slice(offset, limit + offset)
           },
 
           /**
@@ -41,6 +43,7 @@ const MongoClient = {
            * @param {number} limit
            */
           limit (limit) {
+            this.limit = limit
             return this
           },
 
@@ -49,6 +52,7 @@ const MongoClient = {
            * @param {number} offset
            */
           skip (offset) {
+            this.offset = offset
             return this
           }
         }

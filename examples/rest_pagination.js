@@ -1,15 +1,21 @@
 const Koa = require('koa')
 const app = (module.exports = new Koa())
 const Mojoin = require('../lib/index.js')
+const fs = require('fs')
 
 const path = require('path')
-const todos = path.join(__dirname, './datasource/todos.json')
+const todos = JSON.parse(
+  fs.readFileSync(path.join(__dirname, './datasource/todos.json'), 'utf8')
+)
 
 /**
  * Simple Webserver
  */
 app.use(async function (ctx) {
-  ctx.body = todos.slice(ctx.query.offset, ctx.query.limit)
+  const offset = Number(ctx.query.offset)
+  const limit = Number(ctx.query.limit)
+  const todoSlice = todos.slice(offset, limit + offset)
+  ctx.body = todoSlice
 })
 
 app.listen(12987)
@@ -22,16 +28,16 @@ const mojoin = new Mojoin([
   {
     name: 'todos',
     type: 'rest',
-    location: 'https://localhost:12987/todos',
-    paginationPageSize: 2, // defaults to 20
-    paginationLimitParam: 'limit', // needed for html
-    paginationOffsetParam: 'offset', // needed for html
-    paginationPlacement: 'query' // needed for html
+    location: 'http://localhost:12987/todos',
+    paginationPageSize: 42, // optional - defaults to 100
+    paginationLimitParam: 'limit', // optional - defaults to 'timit'
+    paginationOffsetParam: 'offset', // optional - defaults to 'offset'
+    paginationPlacement: 'query' // required - query or header - defaults to no pagination
   }
 ])
 
 const query = {
-  table: 'users',
+  table: 'todos',
   where: {
     userId: 2
   }
