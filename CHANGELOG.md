@@ -33,6 +33,7 @@
 - [ ] Input validation for all methods/ functions
 - [ ] Sync all included datasources before query by default
 - [ ] Only update changed data in the cache (by modification date)
+- [ ] update package.json fields (repository, description, license)
 
 ## Version 0.0.6 - 2018-10-15
 
