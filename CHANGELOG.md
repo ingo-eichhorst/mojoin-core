@@ -22,7 +22,8 @@
 - [ ] CodeImprovement: all functions take only a object as input
 - [ ] Clean up tests
 - [x] ~~implement recurring sync~~ (moved to the mojoin server, since it's only needed there)
-- [ ] insert git repository in pacage json
+- [ ] Insert git repository in pacage json
+- [ ] Take the gathered data for autoSchema creation and do not sync everything again
 
 - Error handling for:
   - [ ] idField does not exist
