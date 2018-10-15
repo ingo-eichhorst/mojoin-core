@@ -12,9 +12,12 @@ const todos = JSON.parse(
  * Simple Webserver
  */
 app.use(async function (ctx) {
+  const filteredTodos = todos.filter(todo => {
+    return todo.updatedAt > ctx.query.updatedAfter || '0'
+  })
   const offset = Number(ctx.query.offset)
   const limit = Number(ctx.query.limit)
-  const todoSlice = todos.slice(offset, limit + offset)
+  const todoSlice = filteredTodos.slice(offset, limit + offset)
   ctx.body = todoSlice
 })
 
@@ -29,6 +32,8 @@ const mojoin = new Mojoin([
     name: 'todos',
     type: 'rest',
     location: 'http://localhost:12987/todos',
+    modifiedParam: 'updatedAfter',
+    modifiedField: 'updatedAt',
     paginationPageSize: 42, // optional - defaults to 100
     paginationLimitParam: 'limit', // optional - defaults to 'timit'
     paginationOffsetParam: 'offset', // optional - defaults to 'offset'
