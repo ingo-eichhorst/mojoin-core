@@ -20,6 +20,7 @@
 - [ ] Improve the jsdoc comments so that a jsdoc wesite report looks good
 - [ ] Improve readme with complete documentation
 - [ ] CodeImprovement: all functions take only a object as input
+- [ ] Clean up tests
 - [x] ~~implement recurring sync~~ (moved to the mojoin server, since it's only needed there)
 
 - Error handling for:
