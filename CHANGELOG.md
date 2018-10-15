@@ -22,6 +22,9 @@
 - [ ] CodeImprovement: all functions take only a object as input
 - [x] ~~implement recurring sync~~ (moved to the mojoin server, since it's only needed there)
 
+- Error handling for:
+  - [ ] idField does not exist
+
 ## Version 0.0.7 - 2018-xx-xx
 
 - [ ] Input validation for all methods/ functions

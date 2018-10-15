@@ -2,17 +2,18 @@ const Mojoin = require('../lib/index.js')
 
 const mojoin = new Mojoin([
   {
-    name: 'albums',
+    name: 'titles',
     type: 'mongodb',
-    location: 'mongodb://localhost:27017/albumdb/albums',
+    location: 'mongodb://localhost:27017/title-manager/titles',
+    idField: 'uuid',
     paginationPageSize: 4 // optional - defaults to 100
   }
 ])
 
 const query = {
-  table: 'albums',
+  table: 'titles',
   where: {
-    userId: 2
+    originalTitle: 'Die Trying'
   }
 }
 

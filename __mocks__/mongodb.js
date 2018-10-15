@@ -33,7 +33,7 @@ const MongoClient = {
            */
           toArray () {
             const offset = this.offset ? this.offset : 0
-            const limit = this.limit ? this.offset : albums.length
+            const limit = this.limit ? this.limit : albums.length
             return albums.slice(offset, limit + offset)
           },
 
