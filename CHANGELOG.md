@@ -22,6 +22,7 @@
 - [ ] CodeImprovement: all functions take only a object as input
 - [ ] Clean up tests
 - [x] ~~implement recurring sync~~ (moved to the mojoin server, since it's only needed there)
+- [ ] insert git repository in pacage json
 
 - Error handling for:
   - [ ] idField does not exist
@@ -32,7 +33,7 @@
 - [ ] Sync all included datasources before query by default
 - [ ] Only update changed data in the cache (by modification date)
 
-## Version 0.0.6 - 2018-xx-xx
+## Version 0.0.6 - 2018-10-15
 
 - [x] Datasource query pagination
 - [X] Logging library debug
