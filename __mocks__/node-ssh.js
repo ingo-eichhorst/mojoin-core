@@ -22,8 +22,6 @@ module.exports = class NodeSsh {
       }
     }
 
-    console.log(command)
-
     if (command.includes('.limit(1)')) {
       if (command.includes('.skip(0)')) {
         return { stdout: '[{"id": 1}]' }
