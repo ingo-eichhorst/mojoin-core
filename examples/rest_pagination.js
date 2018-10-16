@@ -13,7 +13,7 @@ const todos = JSON.parse(
  */
 app.use(async function (ctx) {
   const filteredTodos = todos.filter(todo => {
-    return todo.updatedAt > ctx.query.updatedAfter || '0'
+    return todo.modifiedAt > ctx.query.updatedAfter || '0'
   })
   const offset = Number(ctx.query.offset)
   const limit = Number(ctx.query.limit)
@@ -33,7 +33,7 @@ const mojoin = new Mojoin([
     type: 'rest',
     location: 'http://localhost:12987/todos',
     modifiedParam: 'updatedAfter',
-    modifiedField: 'updatedAt',
+    modifiedField: 'modifiedAt',
     paginationPageSize: 42, // optional - defaults to 100
     paginationLimitParam: 'limit', // optional - defaults to 'timit'
     paginationOffsetParam: 'offset', // optional - defaults to 'offset'
