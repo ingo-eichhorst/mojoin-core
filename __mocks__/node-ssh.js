@@ -26,6 +26,10 @@ module.exports = class NodeSsh {
       } else if (command.includes('.skip(1)')) {
         result = { stdout: '[{"id": 2}]' }
       } else result = { stdout: '[]' }
+    } else if (
+      command.includes('.find({"modifiedAt":{"$gt":{"$date":1514808000000}}}')
+    ) {
+      result = { stdout: '[{"id": 3}, {"id": 4}]' }
     } else {
       result = { stdout: '[{"id": 1}, {"id": 2}]' }
     }
