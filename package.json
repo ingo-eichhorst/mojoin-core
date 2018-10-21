@@ -4,8 +4,8 @@
   "description": "Lightweight Business Intelligence (BI) Library: Load distributed and microservice datasources into a SQL RDBMS and query them.",
   "main": "lib/index.js",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/ingo-eichhorst/mojoin-core"
+    "type": "git",
+    "url": "https://github.com/ingo-eichhorst/mojoin-core"
   },
   "scripts": {
     "start": "node lib/index.js",
@@ -33,7 +33,7 @@
     "jsonschema": "1.2.4",
     "mongodb": "3.1.3",
     "node-ssh": "5.1.2",
-    "sequelize": "4.38.0",
+    "sequelize": "4.41.0",
     "sequelizer": "1.1.3",
     "sqlite3": "4.0.2"
   },
