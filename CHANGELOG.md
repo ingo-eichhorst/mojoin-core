@@ -30,6 +30,7 @@
 - Error handling for:
   - [ ] idField does not exist
   - [ ] mongodb connection string contains all the nessesary parts (collection, database, ...)
+  - [ ] no results in the auto-generate-schema request --> error instedad of table with no entries
 
 ## Version 0.0.7 - 2018-xx-xx
 
