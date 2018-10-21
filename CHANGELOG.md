@@ -17,6 +17,7 @@
 
 - [ ] Resolve all the CodeClimate issues
 - [ ] Resolve all the TODOs in the code
+- [ ] Increase the code coverage to 100%
 - [ ] Improve the jsdoc comments so that a jsdoc wesite report looks good
 - [ ] Improve readme with complete documentation
 - [ ] CodeImprovement: all functions take only a object as input
@@ -37,8 +38,8 @@
 
 - [ ] Input validation for all methods/ functions
 - [ ] Sync all included datasources before query by default
-- [ ] Only update changed data in the cache (by modification date)
-- [ ] update package.json fields (repository, description, license)
+- [x] Only update changed data in the cache (by modification date)
+- [x] update package.json fields (repository, description, license)
 
 ## Version 0.0.6 - 2018-10-15
 
