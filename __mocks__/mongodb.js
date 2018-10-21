@@ -11,7 +11,15 @@ function buildCollection (name) {
     /**
      * Mock find
      */
-    find () {
+    find ({ modifiedAt }) {
+      this.result = JSON.parse(JSON.stringify(albums))
+
+      if (modifiedAt && modifiedAt.$gt) {
+        this.result = this.result.filter(entry => {
+          return new Date(entry.modifiedAt) > modifiedAt.$gt
+        })
+      }
+
       return this
     },
     /**
@@ -19,8 +27,8 @@ function buildCollection (name) {
      */
     toArray () {
       const offset = this.offset ? this.offset : 0
-      const limit = this.limit ? this.limit : albums.length
-      return albums.slice(offset, limit + offset)
+      const limit = this.limit ? this.limit : this.result.length
+      return this.result.slice(offset, limit + offset)
     },
 
     /**

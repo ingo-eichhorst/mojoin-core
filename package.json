@@ -1,8 +1,12 @@
 {
   "name": "mojoin-core",
   "version": "0.0.6",
-  "description": "",
+  "description": "Lightweight Business Intelligence (BI) Library: Load distributed and microservice datasources into a SQL RDBMS and query them.",
   "main": "lib/index.js",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/ingo-eichhorst/mojoin-core"
+  },
   "scripts": {
     "start": "node lib/index.js",
     "test": "jest . --config jest.config.json",
@@ -10,8 +14,17 @@
     "test-ci": "jest . --config jest.config.json && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "test-codacy-coverage": "jest . --config jest.config.json && cat ./coverage/lcov.info | codacy-coverage"
   },
+  "keywords": [
+    "bi",
+    "business intelligence",
+    "reporting",
+    "microservice",
+    "distributed datasources",
+    "rest",
+    "mongodb"
+  ],
   "author": "Ingo Eichhorst",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "axios": "0.18.0",
     "debug": "4.1.0",

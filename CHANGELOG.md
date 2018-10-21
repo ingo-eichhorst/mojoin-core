@@ -24,15 +24,21 @@
 - [x] ~~implement recurring sync~~ (moved to the mojoin server, since it's only needed there)
 - [ ] Insert git repository in pacage json
 - [ ] Take the gathered data for autoSchema creation and do not sync everything again
+- [ ] Fields updatedAt and createdAt are not possible in datasources currently (because Sequalize is using them by default)
+- [ ] make sure the tests are all running on a seperate test database that is deleted after test
+- [ ] Bug: Tests instantiate cahce at different places
 
 - Error handling for:
   - [ ] idField does not exist
+  - [ ] mongodb connection string contains all the nessesary parts (collection, database, ...)
+  - [ ] no results in the auto-generate-schema request --> error instedad of table with no entries
 
 ## Version 0.0.7 - 2018-xx-xx
 
 - [ ] Input validation for all methods/ functions
 - [ ] Sync all included datasources before query by default
 - [ ] Only update changed data in the cache (by modification date)
+- [ ] update package.json fields (repository, description, license)
 
 ## Version 0.0.6 - 2018-10-15
 
