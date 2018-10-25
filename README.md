@@ -37,8 +37,7 @@ const query = {
   }]
 }
 
-mojoin.syncAll()
-  .then(() => mojoin.generateReport(query))
+mojoin.generateReport(query))
   .then(r => console.log(r))
   .catch(e => console.error(e))
 ```
