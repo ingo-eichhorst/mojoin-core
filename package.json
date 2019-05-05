@@ -12,7 +12,9 @@
     "test": "jest . --config jest.config.json",
     "lint": "eslint .",
     "test-ci": "jest . --config jest.config.json && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
-    "test-codacy-coverage": "jest . --config jest.config.json && cat ./coverage/lcov.info | codacy-coverage"
+    "test-codacy-coverage": "jest . --config jest.config.json && cat ./coverage/lcov.info | codacy-coverage",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [
     "bi",
@@ -35,7 +37,8 @@
     "node-ssh": "5.1.2",
     "sequelize": "4.41.0",
     "sequelizer": "1.1.3",
-    "sqlite3": "4.0.2"
+    "sqlite3": "4.0.2",
+    "snyk": "^1.161.1"
   },
   "devDependencies": {
     "codacy-coverage": "3.0.0",
@@ -51,5 +54,6 @@
     "jest-junit": "5.1.0",
     "koa": "2.5.3",
     "nock": "9.6.1"
-  }
+  },
+  "snyk": true
 }
