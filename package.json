@@ -34,7 +34,7 @@
     "mongodb": "3.1.3",
     "node-ssh": "5.1.2",
     "sequelize": "4.41.0",
-    "sequelizer": "1.1.3",
+    "sequelizer": "1.1.4",
     "sqlite3": "4.0.2"
   },
   "devDependencies": {
