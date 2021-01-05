@@ -26,7 +26,7 @@
   "author": "Ingo Eichhorst",
   "license": "MIT",
   "dependencies": {
-    "axios": "0.18.0",
+    "axios": "0.21.1",
     "debug": "4.1.0",
     "ejson": "2.1.2",
     "generate-schema": "2.6.0",
